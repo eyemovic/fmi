@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!--#include virtual="includes/index_head.html" -->
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <!--#include virtual="includes/gtm.html" -->
+<script>
+$(function(){
+	$('.earnMileage_inner > dl > dt').on('click', function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active');
+		}else {
+			$(this).addClass('active');
+		}
+		$(this).next('dd').slideToggle();
+	});
+	$('a[href^="#"]').click(function(){
+		var speed = 500;
+		var href= $(this).attr("href");
+		var target = $(href == "#" || href == "" ? 'html' : href);
+		var position = target.offset().top;
+		$("html, body").animate({scrollTop:position}, speed, "swing");
+		return false;
+	});
+	
+	//var deviceUA = window.navigator.userAgent;
+	//if(is_gu_app()){
+	//	$('.mileage_appDL').hide();
+	//	var appOnly = 'gu-japan://mypage';
+	//	$('#app_only a').attr('href', appOnly)
+	//	$('#app_only, .purchaseHistory').show();
+	//}else {
+	//	if(deviceUA.match(/(iPhone)|(iPod)/)){
+	//		$('.app_Android').hide();
+	//		$('.app_iOS').show();
+	//	}else {
+	//		$('.app_iOS').hide();
+	//		$('.app_Android').show();
+	//	}
+	//}
+});
+</script>
+</head>
+<body id="top" class="L1">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TNLMX3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	<!-- ### Header ### -->
+	<div class="headerContainer" style="margin:0;">
+		<!--#include virtual="/jp/ja/feature-common/parts/pc/dynamic/header.html" -->
+		<!--#include virtual="/jp/ja/feature-common/parts/sp/dynamic/header.html" -->
+	</div>
+  
+	<div id="content-body" class="help_mileage">
+		
+		<div class="mainVisual">
+			<div class="mainVisual_in">
+				<div>
+					<h1>ジーユー<br >マイレージプログラム<br>ステージ特典</h1>
+					<p>年間の購入金額に応じて決まるステージ。<br>GOLD・PLATINUMへステージアップすることで、<br>様々な特典に応募いただくことができます。</p>
+				</div>
+				<ul>
+					<li><a href="#useMileage">商品モニター</a></li>
+					<li><a href="#fanevent">ファンイベント</a></li>
+					<li><a href="#earnMileage">ステージ特典参加方法</a></li>
+					<li><a href="#aboutStage">ステージ特典応募方法</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div id="useMileage" class="useMileage">
+			<h2 class="title">商品モニター</h2>
+			<p>季節に合わせたジーユーのおすすめ商品を、<br class="spbr">毎月抽選で400名様にお届けします。<br>何が届くかは、届くまでのお楽しみとなります。</p>
+			<p class="small">※開催頻度は変更される可能性もあります。</p>
+			
+			<div class="stageArea">
+				<div class="stageImg">
+					<img src="./img/20210226_img_stage01.png" alt="商品モニター" class="pcview">
+					<img src="./img/20210226_img_stage01_sp.png" alt="商品モニター" class="spview">
+				</div>
+			</div>
+			
+			<div class="voiceArea">
+				<h3 class="subTitle">参加したお客様の声</h3>
+				<div class="voiceImg">
+					<img src="./img/20210226_img_voice01_pc.png" alt="参加したお客様の声" class="pcview">
+					<img src="./img/20210226_img_voice01_sp.png" alt="参加したお客様の声" class="spview">
+				</div>
+			</div>
+			
+			<div id="fanevent"><h2 class="title">ファンイベント</h2></div>
+			<p>ファッションをもっと楽しんでいただける<br class="spbr">スタイリング講座や、<br>ジーユーの商品開発に関わっていただけるイベント等、<br class="spbr">様々なイベントにご招待します。</p>
+			<p class="small">※開催頻度は不定期です。<br>※イベント詳細は開催毎に異なります。ご了承ください。</p>
+			
+			<div class="stageArea">
+				<div class="stageImg">
+					<img src="./img/20210226_img_stage02.png" alt="商品モニター" class="pcview">
+					<img src="./img/20210226_img_stage02_sp.png" alt="商品モニター" class="spview">
+				</div>
+			</div>
+			
+			<div class="reportArea">
+				<h3 class="subTitle">2020年12月開催<br class="spbr">  ファンミーティング　レポート</h3>
+				<div class="reporImg flexWrapCenter flexSpacebetween">
+					<img src="./img/2021_img_report01.png" alt="2020年12月開催  ファンミーティング　レポート">
+					<img src="./img/2021_img_report02.png" alt="2020年12月開催  ファンミーティング　レポート">
+				</div>
+				<div class="text">
+					<p>約40名のお客様にジーユー本社に来ていただき、来年の冬シーズンに向けた商品開発会議にご参加いただきました。<br>
+						2020年の秋冬に購入したアイテムに対するご意見を伺いながら、商品開発やマーケティングを担当しているメンバーとディスカッションをしていただきました。<br>
+						また、「トレンドの春カラーを取り入れるコツ」をテーマに、人気スタイリストによるファッション講座も開催。沢山のご質問をいただき、大盛況に終わりました。
+					</p>
+				</div>
+			</div>
+			
+			<div class="voiceArea small">
+				<h3 class="subTitle">開発担当者の声</h3>
+				<div class="voiceImg small">
+					<img src="./img/20210226_img_voice02_pc.png" alt="参加したお客様の声" class="pcview">
+					<img src="./img/20210226_img_voice02_sp.png" alt="参加したお客様の声" class="spview">
+				</div>
+				<h3 class="subTitle">参加したお客様の声</h3>
+				<div class="voiceImg">
+					<img src="./img/20210226_img_voice03_pc.png" alt="参加したお客様の声" class="pcview">
+					<img src="./img/20210226_img_voice03_sp.png" alt="参加したお客様の声" class="spview">
+				</div>
+			</div>
+			
+			<div class="reportArea">
+				<h3 class="subTitle">2020年12月開催<br class="spbr">  2021春夏展示会　レポート</h3>
+				<div class="reporImg flexWrapCenter flexSpacebetween">
+					<img src="./img/2021_img_report03.png" alt="2020年12月開催  2021春夏展示会　レポート">
+					<img src="./img/2021_img_report04.png" alt="2020年12月開催  2021春夏展示会　レポート">
+				</div>
+				<div class="text">
+					<p>12月開催のシークレットイベントでは、ジーユー本社で開催された2021年春夏展示会に、約100名のお客様にお越しいただき、春夏の新しい商品をいち早くご覧いただきました。<br>
+						また、会場では、人気スタイリストやヘアメイクアーティスト、骨格アナリスト等のゲストをお呼びし、「自分に似合うスタイリング」をテーマにしたスタイリング講座を開催。大盛況に終わりました。
+					</p>
+				</div>
+			</div>
+			
+			<div class="voiceArea">
+				<h3 class="subTitle">参加したお客様の声</h3>
+				<div class="voiceImg">
+					<img src="./img/20210226_img_voice04_pc.png" alt="参加したお客様の声" class="pcview">
+					<img src="./img/20210226_img_voice04_sp.png" alt="参加したお客様の声" class="spview">
+				</div>
+			</div>
+
+		</div>
+
+		<div id="earnMileage" class="earnMileage">
+			<div class="earnMileage_inner">
+				<h2>ステージ特典に<br class="spbr">参加するには</h2>
+				<p>年間の購入金額に応じて決定するステージに合わせ、<br class="spbr">参加できるステージ特典が変わります。<br>
+					<span class="">商品モニターはGOLD・PLATINUMステージのお客様に、ファンイベントはPLATINUMステージのお客様にご参加いただけます。</span></p>
+
+				<div class="aboutStage">
+					<div class="aboutStage_table">
+						<table>
+							<thead>
+							<tr>
+								<th colspan="2">&nbsp;</th>
+								<th class="icon"><img src="./img/index/aboutStage_s_sp.png" alt="SILVER" class="pcview"><img src="./img/index/aboutStage_s_sp.png" alt="SILVER" class="spview"></th>
+								<th class="icon"><img src="./img/index/aboutStage_g_sp.png" alt="GOLD" class="pcview"><img src="./img/index/aboutStage_g_sp.png" alt="GOLD" class="spview"></th>
+								<th class="icon"><img src="./img/index/aboutStage_p_sp.png" alt="PLATINUM" class="pcview"><img src="./img/index/aboutStage_p_sp.png" alt="PLATINUM" class="spview"></th>
+							</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th colspan="2">達成条件</th>
+									<td>25,000円<br class="spbr">未満</td>
+									<td>25,000円<br class="spbr">以上<br>50,000円<br class="spbr">未満</td>
+									<td>50,000円<br class="spbr">以上</td>
+								</tr>
+								<tr>
+									<th colspan="2">還元率</th>
+									<td colspan="3">1%</td>
+								</tr>
+								<tr>
+									<th colspan="2">商品との<br class="spbr">交換</th>
+									<td>○</td>
+									<td class="back">○</td>
+									<td class="back">○</td>
+								</tr>
+								<tr>
+									<th colspan="2">寄付</th>
+									<td>○</td>
+									<td class="back">○</td>
+									<td class="back">○</td>
+								</tr>
+								<tr>
+									<th rowspan="2">ステージ<br class="spbr">特典</th>
+									<td class="tLeft">商品<br class="spbr">モニター</td>
+									<td>&nbsp;</td>
+									<td class="back">○</td>
+									<td class="back">○</td>
+								</tr>
+								<tr>
+									<td class="tLeft"><span>ファン<br>イベント</span></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+									<td class="back">○</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="info">
+							<div class="infoBox">
+								<div class="linkArea"><a href="https://www.gu-global.com/jp/ja/service/mileage/about/">マイレージプログラムの詳細はこちら</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="aboutStage" class="aboutStage">
+			<h2>ステージ特典への<br class="spbr">応募方法</h2>
+			<p>対象ステージの方には、ジーユー公式アプリのメッセージにて、それぞれのステージ特典への応募フォームをお送りします。<br>ご自身のステージを確認し、メッセージを楽しみに待っていてください。<br class="spbr"></p>
+
+			<div class="stageArea apply">
+				<div class="stageImg"><img src="./img/20210226_img_stage03.png" alt="ステージ特典への応募方法" class="pcview"><img src="./img/20210226_img_stage03_sp.png" alt="ステージ特典への応募方法" class="spview"></div>
+			</div>
+			
+			<div class="mileage_appDL">
+				<div id="guapp"><p>ジーユーアプリをまだお持ちでない方は、<br class="spbr">こちらからダウンロード</p></div>
+				
+				<dvi class="appArea flexWrapCenter flexSpacebetween">
+					<div class="appDL_link app_iOS">
+						<a href="https://tracker.adplan7.com/wa/c/r/p?md=962&cp=116700&agr=8893767&ad=15743810" target="_blank"><img src="./img/index/app_link_AppStore.png"></a>
+					</div>
+					<div class="appDL_link app_Android">
+						<a href="https://tracker.adplan7.com/wa/c/r/p?md=962&cp=116700&agr=8893767&ad=15743811" target="_blank"><img src="./img/index/app_link_GooglePlay.png"></a>
+					</div>
+				</dvi>
+			</div>
+
+		</div>
+
+	</div>
+  
+	<div id="pagetop">
+		<a href="#top"><img src="/jp/ja/feature/images/global/btn_pagetop.png" alt="ページトップへ" class="over"></a>
+	</div>
+	<footer id="footer">
+		<!--#include virtual="/jp/ja/feature-common/parts/sp/dynamic/footer.html" -->
+		<!--#include virtual="/jp/ja/feature-common/parts/pc/dynamic/footer.html" -->
+	</footer>
+	<!--#include virtual="/jp/ja/feature-common/parts/assets/footer-libs.html" -->
+	<!--#include virtual="includes/foot.html" -->
+</body>
+</html>
