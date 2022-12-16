@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@mixin animate{
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+  backface-visibility: hidden;
+}
+.--animate__fadeIn{
+  @include animate;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  &.--animated{
+    animation-name: fadeIn;
+  }
+}
+.--animate__scrollIn{
+  @include animate;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  &.--animated{
+    animation-name: scrollIn;
+  }
+}
+.--animated{
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes fadeIn{
+  from {
+    transform: translateY(25%);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollIn{
+  from {
+    opacity: 0;
+    transform: translate(0,60px) scale(1.1);
+  }
+  to{
+    opacity: 1;
+    transform: translate(0,0) scale(1);
+  }
+}

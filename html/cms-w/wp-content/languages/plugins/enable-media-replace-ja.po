@@ -1,0 +1,337 @@
+# Translation of Plugins - Enable Media Replace - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Enable Media Replace - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-11-19 13:20:48+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Enable Media Replace - Stable (latest release)\n"
+
+#: views/upsell.php:135
+msgid "Get Pro"
+msgstr "プロ版を入手"
+
+#: views/upsell.php:128
+msgid "Envira Gallery activated!"
+msgstr "Envira ギャラリーが有効化されました !"
+
+#: views/upsell.php:126
+msgid "Activate"
+msgstr "有効化"
+
+#: views/upsell.php:124
+msgid "Install now"
+msgstr "今すぐインストール"
+
+#: views/upsell.php:115
+msgid "Create beautiful, fast-loading photo & video galleries for your site in minutes."
+msgstr "数分でサイトで美しい、高速読み込みの写真と動画のギャラリーを作成します。 "
+
+#: views/upsell.php:104
+msgid "GET AN ASSESSMENT FOR %s YOUR WEBSITE %s AND %s %s FIND OUT HOW TO MAKE IT FASTER %s"
+msgstr "GET AN ASSESSMENT FOR %s YOUR WEBSITE %s AND %s %s FIND OUT HOW TO MAKE IT FASTER %s"
+
+#: views/upsell.php:94
+msgid "Shortpixel Adaptive Images activated!"
+msgstr "Shortpixel Adaptive Images を有効化しました !"
+
+#: views/upsell.php:80
+msgid "In Minutes"
+msgstr "分で"
+
+#: views/upsell.php:79
+msgid "Start Serving %s Optimized, %s Nextgen images %s From a global CDN"
+msgstr "Start Serving %s最適化された%s Nextgen イメージ%sをグローバル CDN から提供する"
+
+#: views/upsell.php:75
+msgid "ShortPixel Adaptive Images"
+msgstr "ShortPixel Adaptive Images"
+
+#: views/upsell.php:60
+msgid "Shortpixel activated!"
+msgstr "Shortpixel を有効化しました !"
+
+#: views/upsell.php:57 views/upsell.php:91
+msgid "ACTIVATE"
+msgstr "有効化"
+
+#: views/upsell.php:53 views/upsell.php:87
+msgid "INSTALL NOW"
+msgstr "今すぐインストール"
+
+#: views/upsell.php:46
+msgid "Optimize all images %s automatically"
+msgstr "すべての画像%sを自動的に最適化します"
+
+#: views/upsell.php:44
+msgid "Is your website slow?"
+msgstr "あなたのサイトは遅いですか ?"
+
+#: views/upsell.php:42
+msgid "ShortPixel Image Optimizer"
+msgstr "ShortPixel Image Optimizer"
+
+#: views/upload.php:31
+msgid "Error in request. Please try again"
+msgstr "リクエストでエラーが発生しました。もう一度お試しください"
+
+#: views/popup.php:205
+msgid "Now"
+msgstr "今"
+
+#: views/popup.php:189
+msgid "Replace the date with current date %s(%s)%s"
+msgstr "日付を現在の日付に置き換える %s(%s)%s"
+
+#: views/popup.php:148
+msgid "If you replace the file with a different filetype, this file might become unreadable and / or cause unexpected issues"
+msgstr "異なるファイルタイプに置換した場合、このファイルが読めなくなったり、予期せぬ問題が発生する可能性があります"
+
+#: views/popup.php:35 views/upload.php:36
+msgid "You do not have permission to upload files for this author."
+msgstr "この投稿者には、ファイルをアップロードする権限がありません。"
+
+#: classes/external/upgrader_skin.php:81
+msgid "There was an error installing the addon. Please try again."
+msgstr "アドオンのインストールに失敗しました。もう一度お試しください。"
+
+#: classes/emr-plugin.php:208
+msgid "Installing ..."
+msgstr "インストール中 ..."
+
+#: views/popup.php:217
+msgid "Put new Upload in Updated Folder: "
+msgstr "新しいアップロードを更新フォルダーに入れます: "
+
+#: views/popup.php:162
+msgid "Note: If you check this option, the name and type of the file you are about to upload will replace the old file. All links pointing to the current file (%s) will be updated to point to the new file name. (If any other websites link to the file directly, those links will no longer work. Be careful.)"
+msgstr "注: このオプションをチェックすると、アップロードしようとしているファイルの名前と種類が古いファイルに置き換わります。現在のファイル (%s) を指すすべてのリンクは、新しいファイル名を指すように更新されます。 (他のウェブサイトがファイルに直接リンクしている場合、それらのリンクは機能しなくなります。注意してください) 。"
+
+#: views/popup.php:100
+msgid "Drop File Here"
+msgstr "ここにファイルをドロップ"
+
+#: build/shortpixel/notices/src/NoticeModel.php:218
+msgid "Hide Details"
+msgstr "詳細を閉じる"
+
+#: build/shortpixel/notices/src/NoticeModel.php:214
+msgid "See Details"
+msgstr "詳細を表示"
+
+#: classes/emr-plugin.php:464
+msgid "Replaced By"
+msgstr "置換しました"
+
+#: classes/replacer.php:367
+msgid "EMR could not establish a proper destination for replacement"
+msgstr "EMR は置換のための適切な行き先を確立できませんでした。"
+
+#: classes/replacer.php:337
+msgid "In specificied directory there is already a file with the same name. Can't replace."
+msgstr "指定されたディレクトリには、同じ名前のファイルがすでに存在します。 置換できません。"
+
+#: classes/replacer.php:314
+msgid "Specificed new directory does not exist. Path must be a relative path from the upload directory and exist"
+msgstr "指定された新しいディレクトリが存在しません。パスはアップロードディレクトリからの相対パスでなければなりません。"
+
+#: views/upsell.php:106
+msgid "FIND OUT MORE"
+msgstr "さらに詳しく"
+
+#: views/popup.php:195
+msgid "Custom Date"
+msgstr "カスタム日付"
+
+#: views/popup.php:191
+msgid "Set a Custom Date"
+msgstr "カスタム日時を設定する"
+
+#: views/popup.php:190
+msgid "Keep the date %s(%s)%s"
+msgstr "日付をキープ %s(%s)%s"
+
+#: views/popup.php:187
+msgid "When replacing the media, do you want to:"
+msgstr "ファイルを置換するときに、したいことは:"
+
+#: views/popup.php:171
+msgid "Date Options"
+msgstr "日付オプション"
+
+#: views/popup.php:130
+msgid "Replacement Options"
+msgstr "置換オプション"
+
+#: views/popup.php:94
+msgid "Replacement file type doesn't seem to be allowed by WordPress. This might cause unexpected issues"
+msgstr "置換ファイルの種類は WordPress で許可されていないようです。 これにより、予期しない問題が発生する可能性があります"
+
+#: views/popup.php:90
+msgid "Replacement file is not the same filetype. This might cause unexpected issues ( %s )"
+msgstr "置換ファイルは同じファイルタイプではありません。 これにより、予期しない問題が発生する可能性があります ( %s )"
+
+#: views/popup.php:87
+msgid "%s f %s exceeds the maximum upload size for this site."
+msgstr "%s f %s は、このサイトの最大アップロードサイズを超えています。"
+
+#: views/popup.php:86
+msgid "Maximum file size: <strong>%s</strong>"
+msgstr "最大ファイルサイズ: %s"
+
+#: views/popup.php:79
+msgid "Choose Replacement Media"
+msgstr "置換メディアを選択してください"
+
+#: views/upload.php:186
+msgid "File successfully replaced"
+msgstr "ファイルが正常に置換されました"
+
+#: views/upload.php:181
+msgid "File Upload seems to have failed. No files were returned by system"
+msgstr "ファイルのアップロードに失敗したようです。 システムからファイルが返されませんでした。"
+
+#: views/upload.php:82
+msgid "Invalid Custom Date. Please custom date values (%s)"
+msgstr "無効なカスタム日付です。カスタム日付値 (%s) を入力してください。"
+
+#: build/shortpixel/log/src/DebugItem.php:35
+msgid "[Data]"
+msgstr "[Data]"
+
+#: views/popup.php:227
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: views/popup.php:226
+msgid "Upload"
+msgstr "アップロード"
+
+#: views/popup.php:164
+msgid "Please note that if you upload a new image, only embeds/links of the original size image will be replaced in your posts."
+msgstr "新しいファイルをアップロードすると、元のサイズの画像へのリンクや埋め込みのみが置換されますのでご注意ください。"
+
+#: views/popup.php:159
+msgid "Replace the file, use new file name and update all links"
+msgstr "ファイルを置換して新しいファイル名で全てのリンクを更新する"
+
+#: views/popup.php:145
+msgid "Note: This option requires you to upload a file of the same type (%s) as the one you are replacing. The name of the attachment will stay the same (%s) no matter what the file you upload is called."
+msgstr "注：このオプションでは、置換するファイルと同じタイプ (%s)のファイルをアップロードする必要があります。 アップロードするファイルの名前に関係なく、添付ファイルの名前は同じ (%s)のままです。"
+
+#: views/popup.php:141
+msgid "Just replace the file"
+msgstr "ファイルの置換のみ"
+
+#: views/popup.php:85
+msgid "Choose a file to upload from your computer"
+msgstr "コンピューターからアップロードするファイルを選択"
+
+#: views/popup.php:81
+msgid "NOTE: You are about to replace the media file \"%s\". There is no undo. Think about it!"
+msgstr "注: メディアファイル 「%s」を置換しようとしています。元に戻すことはできません。 よく考えて !"
+
+#: views/popup.php:64
+msgid "Replace Media Upload"
+msgstr "アップロードしてメディアを置換"
+
+#: classes/emr-plugin.php:452
+msgid "Revised"
+msgstr "変更されました"
+
+#: classes/emr-plugin.php:449
+msgid "M j, Y @ H:i"
+msgstr "Y年n月j日 @ H:i"
+
+#: classes/emr-plugin.php:328 views/popup.php:207
+msgid "Original"
+msgstr "オリジナル"
+
+#: classes/emr-plugin.php:316
+msgid "Thumbnails were not generated"
+msgstr "サムネイルは作成されませんでした"
+
+#: classes/emr-plugin.php:303 classes/emr-plugin.php:365
+msgid "To replace the current file, click the link and upload a replacement."
+msgstr "現在のファイルを置換するには、このリンクをクリックしてアップロードします。"
+
+#: classes/emr-plugin.php:303 classes/emr-plugin.php:365
+msgid "Upload a new file"
+msgstr "新しいファイルをアップロード"
+
+#: classes/emr-plugin.php:115 classes/emr-plugin.php:363
+#: classes/emr-plugin.php:402
+msgid "Replace media"
+msgstr "メディアを置換"
+
+#: classes/emr-plugin.php:283
+msgid "Replaced Thumbnails Preview"
+msgstr "サムネイルプレビューを置換しました"
+
+#: classes/emr-plugin.php:279
+msgid "Replace Media"
+msgstr "メディアを置換"
+
+#: classes/replacer.php:557
+msgid "There was an issue with updating your image URLS: Search and replace have different amount of values. Aborting updating thumbnails"
+msgstr "画像の URL の更新に問題がありました。検索と置換の値の量が異なります。 サムネイルの更新を中止します。"
+
+#: classes/replacer.php:480
+msgid "Fail Safe :: Source Location returned empty string. Not replacing content"
+msgstr "フェイルセーフ:: ソースの場所が空の文字列を返しました。コンテンツを置換していません。"
+
+#: classes/replacer.php:473
+msgid "Fail Safe :: Source Location seems to be a directory."
+msgstr "フェイルセーフ:: ソースの場所はディレクトリのようです。"
+
+#: classes/replacer.php:131
+msgid "The uploaded file could not be moved to %1$s. This is most likely an issue with permissions, or upload failed."
+msgstr "アップロードされたファイルを %1$s に移動できませんでした。 これは、パーミッションの問題か、アップロードが失敗した可能性があります。"
+
+#: views/upload.php:137
+msgid "File type does not meet security guidelines. Try another."
+msgstr "ファイル形式がセキュリティ的に許可されません。他の形式をお試しください。"
+
+#: views/popup.php:23 views/upload.php:11
+msgid "You do not have permission to upload files."
+msgstr "ファイルをアップロードする権限がありません。"
+
+#: views/notice.php:11
+msgid "More info"
+msgstr "詳細情報"
+
+#: views/notice.php:8
+msgid "<a href=\"https://shortpixel.com/wp/af/VKG6LYN28044\" target=\"_blank\">ShortPixel</a> is an image optimization plugin and if you have it activated, upon replacing an image in Enable Media Replace, the image will be also automatically optimized."
+msgstr "<a href=\"https://shortpixel.com/wp/af/VKG6LYN28044\" target=\"_blank\">ShortPixel</a>  は画像最適化プラグインで、これを有効にしている場合、Enable Media Replace で画像を置換すると、画像も自動的に最適化されます。"
+
+#: views/notice.php:6
+msgid "Enable Media Replace is now compatible with ShortPixel!"
+msgstr "Enable Media Replace は、ShortPixel と互換性があります !"
+
+#: views/notice.php:2
+msgid "Dismiss"
+msgstr "非表示"
+
+#. Author URI of the plugin
+msgid "https://shortpixel.com"
+msgstr "https://shortpixel.com"
+
+#. Author of the plugin
+msgid "ShortPixel"
+msgstr "ShortPixel"
+
+#. Description of the plugin
+msgid "Enable replacing media files by uploading a new file in the \"Edit Media\" section of the WordPress Media Library."
+msgstr "WordPress メディアライブラリの「メディアの編集」セクションで新しいファイルをアップロードして、メディアファイルの置換を有効にしてください。"
+
+#. Plugin URI of the plugin
+msgid "https://wordpress.org/plugins/enable-media-replace/"
+msgstr "https://wordpress.org/plugins/enable-media-replace/"
+
+#. Plugin Name of the plugin
+msgid "Enable Media Replace"
+msgstr "Enable Media Replace"

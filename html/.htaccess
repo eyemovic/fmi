@@ -1,0 +1,44 @@
+AddHandler x-httpd-php74 .php
+suPHP_ConfigPath /home/ad128e1q0f/html/
+
+AuthUserFile /usr/home/ad128e1q0f/html/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Protected Area"
+AuthType Basic
+<Limit GET POST>
+require valid-user
+</Limit>
+<FilesMatch \.html$>
+SetHandler server-parsed
+</FilesMatch>
+
+Options +Includes +SymLinksIfOwnerMatch
+RewriteEngine on
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_siteguard.c>
+  <Files wp-login.php>
+    SiteGuard_User_ExcludeSig url-php-rfi
+  </Files>
+  SiteGuard_User_ExcludeSig ip(60.34.58.245)
+  SiteGuard_User_ExcludeSig ip(118.158.248.28)
+  SiteGuard_User_ExcludeSig ip(14.12.81.160)
+  SiteGuard_User_ExcludeSig ip(125.102.220.78)
+</IfModule>
+
+# BEGIN WordPress
+# "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
+# 動的に生成され、WordPress フィルターによってのみ修正が可能です。
+# これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

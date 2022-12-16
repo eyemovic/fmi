@@ -1,0 +1,157 @@
+@charset "shift_jis";
+.btnArea {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.overview_lead {
+	/*height: 58px;*/
+	max-width: 544px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+    font-size: 1.6rem;
+}
+#overview_chart {
+	margin-top: 40px;
+	font-size: 75%;
+}
+#overview_chart * {
+	margin:0;
+	padding:0;
+	border:0;
+}
+#overview_chart dt {
+	float:left;
+	clear:both;
+	width:16em;
+	/*white-space:nowrap;*/
+	text-align: left;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding-top: 0.7ex;
+	padding-bottom: 0.3ex;
+	padding-left:2px;
+}
+@media print, screen and (min-width: 768px) {
+    #overview_chart dt {
+        width:25em;
+    }
+
+}
+#overview_chart dd {
+	margin-left:17em;    /* = dt.width + dt.padding */
+	padding:1ex;
+	background:#fff;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+@media print, screen and (min-width: 768px) {
+    #overview_chart dd {
+        margin-left: 26em;
+    }
+}
+.2line{
+	padding-top:10px;	color:#00ff00;
+}
+#overview_chart .table_top {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+#affiliate {
+	margin-top: 40px;
+	font-size: 0.75em;
+	line-height: 130%;
+}
+#affilated_title {
+	height: 30px;
+	width: 544px;
+	background-image: url(../../corporate/overview/images/overview_affiliated.gif);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	margin-bottom: 10px;
+}
+.recipe_block_inner dt {
+	float:left;
+	clear:both;
+	width:9em;
+	_width:10em;
+	white-space:nowrap;
+	text-align: center;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+.recipe_block_inner dd {
+	margin-left:10em;    /* = dt.width + dt.padding */
+	padding:1ex;
+	background:#fff;
+	border-top-width: 1px;
+	border-top-style: dotted;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+}
+.recipe_block_inner .table_top {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+.overview_text_block {
+	padding-left: 129px;
+}
+.alignRight{
+	text-align:right;
+}
+
+
+.history_title {
+    margin-top: 40px;
+}
+#content_area_b {
+    max-width: 544px;
+    margin: 0 auto;
+}
+/* CEO名前 */
+.history_president {
+    line-height: 1;
+    font-family: 'Palatino Linotype','游明朝',YuMincho,'ヒラギノ明朝 ProN W3','Hiragino Mincho ProN','HG明朝E','ＭＳ Ｐ明朝','ＭＳ 明朝',serif;
+}
+.history_president b {
+    font-size: 2.3rem;
+    font-weight: normal;
+}
+.history_president span {
+    font-size: 1.2rem;
+}
+.sp-matchheight {
+    height: 45px;
+}
+@media print, screen and (min-width: 768px) {
+    .sp-matchheight {
+        height: auto;
+    }
+}

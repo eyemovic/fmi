@@ -1,0 +1,23 @@
+AddHandler x-httpd-php74 .php
+suPHP_ConfigPath /home/ad128e1q0f/html/cms-w/
+<FilesMatch "^(\.htaccess|\.htpasswd|php\.ini|.*\.sql|.*\.log|.*\.cron|.*\.inc|.*\.phps|.*\.yml)$">
+  Deny from all
+</FilesMatch>
+Options +SymLinksIfOwnerMatch
+
+<IfModule mod_siteguard.c>
+  SiteGuard_User_ExcludeSig ip(118.158.248.28)
+</IfModule>
+
+# BEGIN WordPress
+# "BEGIN WordPress" から "END WordPress" までのディレクティブ (行) は
+# 動的に生成され、WordPress フィルターによってのみ修正が可能です。
+# これらのマーカー間にあるディレクティブへのいかなる変更も上書きされてしまいます。
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+# END WordPress

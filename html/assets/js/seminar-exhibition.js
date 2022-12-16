@@ -1,0 +1,3 @@
+$(function(){
+    $('.matchHeight').matchHeight();
+});

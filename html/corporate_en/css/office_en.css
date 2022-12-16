@@ -1,0 +1,66 @@
+@charset "shift_jis";
+.btnArea {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.office_title {
+	padding-bottom: 31px;
+}
+.office_lead01 {
+	background-image: url(../../corporate/office/images/office_lead01.gif);
+	height: 20px;
+	width: 544px;
+	background-repeat: no-repeat;
+	margin-top: 30px;
+	margin-bottom: 14px;
+	text-indent: -9999px;
+}
+#map_area {
+	width: 544px;
+	margin-top: 23px;
+}
+#tokyo_area {
+	max-width: 544px;
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+h3 {
+	font-weight: bold;
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+.branch {
+	clear: both;
+	font-size: 0.75em;
+	line-height: 130%;
+	padding-bottom: 22px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+	padding-top: 18px;
+	padding-left: 1em;
+}
+
+.history_title {
+    margin-top: 40px;
+	margin-bottom: 40px;
+	height:39px;
+}
+#content_area_b {
+    max-width: 544px;
+    margin: 0 auto;
+}
+.office_ttl,
+.osaka_area_ttl,
+.tokyo_area_ttl {
+    overflow: hidden;
+}
+.office_ttl img,
+.osaka_area_ttl img,
+.tokyo_area_ttl img {
+    max-width: none;
+}
+

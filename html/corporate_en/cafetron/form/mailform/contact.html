@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>CONTACT</title>
+<meta name="Description" content="CONTACT" />
+<meta name="Keywords" content="CONTACT" />
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/grey.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<style type="text/css">
+h3 { margin-bottom: 0 }
+p { margin-top: 0; margin-bottom: 0 }
+</style>
+
+
+</head>
+
+<body>
+<noscript>
+<p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
+</noscript>
+<div class="wrapper">
+  <article>
+    <div class="form">
+      <h2>CONTACT</h2>
+<p>
+<h3>Tokyo Headoffice</h3>
+1-11-9, Azabudai<br>
+Minato-ku, Toky<br>
+106-0041 Japan<br>
+TEL．+81-3-5561-6521　FAX．+81-3-5561-5071<br>
+<br>
+
+      <p> After following form is input, "to confirmation screen", please click.<br>
+        <span class="required">【indispensable】</span> for, it's required item.</p>
+      <form action="./clipmail.cgi" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="need" value="email Message" />
+        <input type="hidden" name="match" value="email email2" />
+<br>
+
+		        <dl class="clearfix">
+          <dt>Company Name</dt>
+          <dd>
+            <input name="company" type="text" class="txt ina" />
+            <p class="exa"></p>
+          </dd>
+        </dl>
+
+        <dl class="clearfix">
+          <dt>Your Name<span class="required">【indispensable】</span></dt>
+          <dd>
+            <input name="name" type="text" class="txt" />
+            <p class="exa"></p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>Mail Address<span class="required">【indispensable】</span></dt>
+          <dd>
+            <input name="email" type="text" class="txt ina" />
+            <p class="exa">ex）abc@xxx.co.jp</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>Mail Address Confirm<span class="required">【indispensable】</span></dt>
+          <dd>
+            <input name="email2" type="text" class="txt ina" />
+            <p class="exa">ex）abc@xxx.co.jp</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>Phone Number</dt>
+          <dd>
+            <input name="Phon Numbere" type="text" class="txt ina" />
+            <p class="exa">ex）0123456789</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>Address</dt>
+          <dd>
+            <input name="Address" type="text" id="address" class="txt" >
+            <p class="exa"></p>
+          </dd>
+        </dl>
+
+        <dl class="clearfix">
+          <dt>Message<span class="required">【indispensable】</span></dt>
+          <dd>
+            <textarea name="Message" rows="5" ></textarea>
+          </dd>
+        </dl>
+        <ul class="kakunin">
+          <li>
+            <input type="reset" value="reset" class="btn_reset">
+          </li>
+          <li>
+            <input type="submit" value="submit" class="btn_submit">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </article>
+  <!-- / .wrapper --> 
+</div>
+<script src="//code.jquery.com/jquery-2.1.0.min.js"></script> 
+<script src="//jpostal-1006.appspot.com/jquery.jpostal.js"></script> 
+<script>
+$(function(){
+	$('#postcode1').jpostal({
+		postcode : [
+			'#postcode',
+		],
+		address : {
+			'#address1'  : '%3',
+			'#address2'  : '%4%5',
+		}
+	});
+});
+</script> 
+<script src="js/icheck.min.js"></script> 
+<script>
+ $(function() {
+     $('input').iCheck({
+         checkboxClass: 'icheckbox_minimal-grey',
+         radioClass: 'iradio_minimal-grey',
+     });
+ });
+</script> 
+<script src="js/jquery.customSelect.min.js"></script> 
+<script>
+ $(function() {
+     $('.ctSelect').customSelect()
+ });
+</script>
+</body>
+</html>

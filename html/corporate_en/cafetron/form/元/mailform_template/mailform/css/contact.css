@@ -1,0 +1,219 @@
+.form {
+	margin: 30px;
+	color: #333;
+	font-size: 1.5rem;
+}
+h2 {
+	width: 100%;
+	margin: 20px 0;
+	padding: 10px 0 8px;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #0b4ebd), color-stop(1.00, #0b1a67));
+	background: -webkit-linear-gradient(#0b4ebd, #0b1a67);
+	background: -moz-linear-gradient(#0b4ebd, #0b1a67);
+	background: -o-linear-gradient(#0b4ebd, #0b1a67);
+	background: -ms-linear-gradient(#0b4ebd, #0b1a67);
+	background: linear-gradient(#0b4ebd, #0b1a67);
+	color: #fff;
+	text-align: center;
+	font-weight: normal;
+	font-size: 2rem;
+}
+.required {
+	color: #ff0000;
+}
+.exa {
+	padding: 5px;
+	color: #a9a9a9;
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+.form dl {
+	position: relative;
+	width: 100%;
+	padding: 15px 0;
+	border-bottom: 1px solid #dcdcdc;
+}
+.form dl dt {
+	position: absolute;
+	width: 30%;
+	float: left;
+	padding: 5px 10px 10px 10px;
+}
+.form dl dd {
+	width: 68%;
+	float: right;
+}
+.form dl dd textarea, .form dl dd .txt {
+	background-color: #fff;
+	padding: 0 10px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.5rem;	
+}
+.form dl dd textarea {
+	width: 90% !important;
+	height: 100%;
+}
+.form dd .ina {
+	ime-mode: disabled;
+}
+.chra li {
+	margin-left: 10px;
+}
+.ctSelect {
+	background: url(../img/arrow.png) right center no-repeat;
+	background-color: #fff;
+	padding: 0 10px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	width: 50%;
+	height: 40px;
+	line-height: 40px;
+	font-size: 1.5rem !important;
+}
+.customSelectInner {
+	width: 100% !important;
+}
+.clip {
+	line-height: 30px;
+}
+.kakunin {
+	width: 320px;
+	display: table;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+}
+.kakunin li {
+	margin: 0 10px;
+}
+.btn_reset {
+	width: 150px;
+	padding: 5px 0 7px;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #989898), color-stop(1.00, #272727));
+	background: -webkit-linear-gradient(#989898, #272727);
+	background: -moz-linear-gradient(#989898, #272727);
+	background: -o-linear-gradient(#989898, #272727);
+	background: -ms-linear-gradient(#989898, #272727);
+	background: linear-gradient(#989898, #272727);
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+}
+.btn_reset:hover {
+	text-decoration: none;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+ -o-transition: 0.s;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.btn_submit {
+	width: 150px;
+	padding: 5px 0 7px;
+	border-radius: 5px;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, #0b4ebd), color-stop(1.00, #0b1a67));
+	background: -webkit-linear-gradient(#0b4ebd, #0b1a67);
+	background: -moz-linear-gradient(#0b4ebd, #0b1a67);
+	background: -o-linear-gradient(#0b4ebd, #0b1a67);
+	background: -ms-linear-gradient(#0b4ebd, #0b1a67);
+	background: linear-gradient(#0b4ebd, #0b1a67);
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+}
+.btn_submit:hover {
+	text-decoration: none;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-ms-transition: 0.5s;
+ -o-transition: 0.s;
+	transition: 0.5s;
+	cursor: pointer;
+}
+.form th {
+	padding-right: 20px;
+	text-align: left;
+	font-weight: normal;
+}
+.form td {
+	text-align: left;
+}
+.msg {
+	color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+h1, .form dl dd textarea, .form dl dd .txt, .btn_reset, .btn_submit {
+	font-size: 1.5rem;
+}
+.form {
+	margin: 10px;
+	font-size: 1.5rem;
+}
+h1 {
+	padding: 5px 0 3px;
+}
+.exa {
+	padding: 5px 20px;
+	color: #a9a9a9;
+}
+.form dl {
+	width: 100%;
+	padding: 15px 0 0 0;
+	border: none;
+}
+.form dl dt {
+	float: none;
+	position: static;
+	width: 100%;
+}
+.form dl dd {
+	float: none;
+	width: 100%;
+}
+.form dl dd textarea, .form dl dd .txt {
+	display: block;
+	margin: 0 auto;
+	width: 90%;
+}
+.chra li {
+	margin-left: 20px;
+}
+.ctSelect {
+	margin-left: 20px;
+}
+.clip {
+	margin-left: 20px;
+}
+.kakunin {
+	width: 300px;
+}
+.btn_reset {
+	width: 130px;
+}
+.btn_submit {
+	width: 130px;
+}
+}

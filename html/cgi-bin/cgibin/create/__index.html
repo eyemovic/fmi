@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+  <meta http-equiv="Content-Language" content="ja" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <title>株式会社エフ・エム・アイ  URL作成スクリプト</title>
+  <style type="text/css">
+	*{
+		font-size: 14px;
+	}
+	h1{
+		font-size: 18px;
+	}
+	#url_input{
+		margin: 20px 0 0 0;
+	}
+	#url_anchor{
+		margin: 20px 0 0 0;
+	}
+	input.input1{
+		width: 290px;
+	}
+	input.input2{
+		width: 420px;
+	}
+  </style>
+  <script type="text/javascript">
+// <![CDATA[
+	function initial(){
+		if(document.input.p.value == ''){
+			document.input.p.focus();
+		}
+		else{
+			document.input.url.focus();
+			document.input.url.select();
+		}
+	}
+// ]]>
+  </script>
+</head>
+<body onload="initial();">
+<h1>お問い合わせ−アウトレット製品− URL生成</h1>
+<form method="get" action="index.cgi" name="input" id="input">
+製品名：<input type="text" name="p" value="###p###" onblur="this.style.backgroundColor='#FFFFFF';" onfocus="this.style.backgroundColor='#E5ECF9';" class="input1" /> <input type="submit" value="URL生成" />
+<div id="url_input">###url_input###</div>
+<div id="url_anchor">###url_anchor###</div>
+</form>
+</body>
+</html>

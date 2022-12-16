@@ -1,0 +1,15 @@
+@charset "shift_jis";
+.corporateTitle {
+	margin-bottom: 20px;
+}
+.corporate_title {
+	padding-bottom: 16px;
+}
+.corporate_lead {
+	padding-bottom: 12px;
+}
+.corporate_figure {
+	padding-top: 39px;
+	padding-left: 81px;
+	padding-bottom: 100px;
+}

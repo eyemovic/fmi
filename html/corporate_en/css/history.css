@@ -1,0 +1,100 @@
+@charset "shift_jis";
+.btnArea {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.history_block {
+	font-size: 75%;
+}
+.history_block * {
+	margin:0;
+	padding:0;
+	border:0;
+}
+.history_chart {
+	border: 1px solid #999900;
+}
+.history_group_top {
+	background-image: url(../../corporate/history/images/back_ground.gif);
+	width: 544px;
+	background-position: 0px -2px;
+}
+.history_group {
+	background-image: url(../../corporate/history/images/back_ground.gif);
+	width: 544px;
+	background-repeat: no-repeat;
+}
+.history_group-bottom {
+	background-image: url(../../corporate/history/images/back_ground2.gif);
+	width: 544px;
+	height: 1px;
+	clear: both;
+	background-repeat: no-repeat;
+}
+.date {
+	width: 108px;
+	float: left;
+	padding: 10px;
+	text-align: center;
+}
+.history_name_1970 {
+	padding-bottom: 7px;
+}
+.history_name_1980 {
+	padding-bottom: 7px;
+}
+.history_name_1990 {
+	padding-bottom: 7px;
+}
+.history_name_2000 {
+	padding-bottom: 7px;
+}
+.history_name_base {
+	padding-bottom: 7px;
+}
+.history_cont {
+	padding: 10px;
+	float: left;
+	width: 395px;
+}
+.historyImg {
+	width: 138px;
+	text-align: center;
+	border: 1px solid #E7E7E7;
+	float: left;
+	margin-right: 1px;
+	padding-top: 10px;
+}
+.historyText {
+	width: 383px;
+	float: left;
+	background-color: #F2F2F2;
+	padding: 10px;
+	margin-bottom: 1px;
+}
+.spec_item {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #E7E7E7;
+}
+.spec_cont {
+	padding: 10px;
+}
+
+
+.history_title {
+    margin-top: 40px;
+	margin-bottom: 40px;
+	height:39px;
+}
+#content_area_b {
+    max-width: 544px;
+    margin: 0 auto;
+}
+.history_block + .history_block {
+    margin-top: 40px;
+}
+.history_block {
+    max-width: 544px;
+    margin: 0 auto;
+}

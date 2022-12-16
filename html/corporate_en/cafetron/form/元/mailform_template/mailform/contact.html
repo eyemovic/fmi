@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>お問い合わせ</title>
+<meta name="Description" content="お問い合わせ" />
+<meta name="Keywords" content="お問い合わせ" />
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+<link rel="stylesheet" href="css/grey.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<noscript>
+<p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
+</noscript>
+<div class="wrapper">
+  <article>
+    <div class="form">
+      <h2>お問い合わせフォーム</h2>
+      <p> 下記フォームをご入力の上、「確認画面へ」をクリックしてください。<br>
+        <span class="required">【必須】</span>は必須項目です。</p>
+      <form action="./clipmail.cgi" method="post" enctype="multipart/form-data">
+        <input type="hidden" name="need" value="お名前 お名前フリガナ email お問い合せ内容" />
+        <input type="hidden" name="match" value="email email2" />
+        <dl class="clearfix">
+          <dt>お名前（漢字）<span class="required">【必須】</span></dt>
+          <dd>
+            <input name="お名前" type="text" class="txt" />
+            <p class="exa">例）山田　太郎</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>フリガナ（カタカナ）<span class="required">【必須】</span></dt>
+          <dd>
+            <input name="お名前フリガナ" type="text" class="txt" />
+            <p class="exa">例）ヤマダ　タロウ</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>メールアドレス<span class="required">【必須】</span></dt>
+          <dd>
+            <input name="email" type="text" class="txt ina" />
+            <p class="exa">例）abc@xxx.co.jp</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>メールアドレス再入力<span class="required">【必須】</span></dt>
+          <dd>
+            <input name="email2" type="text" class="txt ina" />
+            <p class="exa">例）abc@xxx.co.jp</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>性別</dt>
+          <dd>
+            <ul class="chra">
+              <li>
+                <input type="radio" name="性別" value="男" />
+                男</li>
+              <li>
+                <input type="radio" name="性別" value="女" />
+                女</li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>年代</dt>
+          <dd>
+            <select class="ctSelect">
+              <option value="～10代">～10代</option>
+              <option value="20代">20代</option>
+              <option value="30代">30代</option>
+              <option value="40代">40代</option>
+              <option value="50代">50代</option>
+              <option value="60代">60代</option>
+              <option value="70代">70代～</option>
+            </select>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>お電話番号</dt>
+          <dd>
+            <input name="お電話番号" type="text" class="txt ina" />
+            <p class="exa">例）012-345-6789</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>郵便番号</dt>
+          <dd>
+            <input name="郵便番号" type="text" id="postcode" class="txt ina" >
+            <p class="exa">例）1234567 ハイフン不要</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>都道府県</dt>
+          <dd>
+            <input name="都道府県" type="text" id="address1" class="txt" >
+            <p class="exa">例）東京都</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>市区町村以下</dt>
+          <dd>
+            <input name="市区町村・町域" type="text" id="address2" class="txt" >
+            <p class="exa">例）新宿区西新宿x-xx-xx　※番地、ビル名、部屋番号も合わせてご入力ください。</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>勤務先（会社名など）</dt>
+          <dd>
+            <input name="勤務先" type="text" class="txt" />
+            <p class="exa">例）株式会社ｘｘｘｘ</p>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>お問い合せ種類</dt>
+          <dd>
+            <ul class="chra">
+              <li>
+                <input type="radio" name="お問い合せ種類" value="ご質問" />
+                ご質問</li>
+              <li>
+                <input type="radio" name="お問い合せ種類" value="ご相談" />
+                ご相談</li>
+              <li>
+                <input type="radio" name="お問い合せ種類" value="ご感想" />
+                ご感想</li>
+              <li>
+                <input type="radio" name="お問い合せ種類" value="ご依頼" />
+                ご依頼</li>
+              <li>
+                <input type="radio" name="お問い合せ種類" value="その他" />
+                その他 </li>
+            </ul>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>お問い合せ内容<span class="required">【必須】</span></dt>
+          <dd>
+            <textarea name="お問い合せ内容" rows="5" ></textarea>
+          </dd>
+        </dl>
+        <dl class="clearfix">
+          <dt>添付ファイル</dt>
+          <dd>
+            <div class="clip">
+              <p>最大サイズ 1MB</p>
+              <input type="file" name="clip-1" >
+              <br>
+              <input type="file" name="clip-2" >
+              <br>
+              <input type="file" name="clip-3" >
+            </div>
+          </dd>
+        </dl>
+        <ul class="kakunin">
+          <li>
+            <input type="reset" value="リセット" class="btn_reset">
+          </li>
+          <li>
+            <input type="submit" value="確認画面へ" class="btn_submit">
+          </li>
+        </ul>
+      </form>
+    </div>
+  </article>
+  <!-- / .wrapper --> 
+</div>
+<script src="//code.jquery.com/jquery-2.1.0.min.js"></script> 
+<script src="//jpostal-1006.appspot.com/jquery.jpostal.js"></script> 
+<script>
+$(function(){
+	$('#postcode1').jpostal({
+		postcode : [
+			'#postcode',
+		],
+		address : {
+			'#address1'  : '%3',
+			'#address2'  : '%4%5',
+		}
+	});
+});
+</script> 
+<script src="js/icheck.min.js"></script> 
+<script>
+ $(function() {
+     $('input').iCheck({
+         checkboxClass: 'icheckbox_minimal-grey',
+         radioClass: 'iradio_minimal-grey',
+     });
+ });
+</script> 
+<script src="js/jquery.customSelect.min.js"></script> 
+<script>
+ $(function() {
+     $('.ctSelect').customSelect()
+ });
+</script>
+</body>
+</html>
